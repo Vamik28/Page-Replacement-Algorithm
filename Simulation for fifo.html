@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="simulator.css">
+
+    <link rel="stylesheet" href="fifo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  </head>
+<body>
+    <nav>
+      
+      
+        <div class="nav">
+          <a href="home.html"><i class="fa fa-home"></i></a>
+          <a href="what_is_page_replacement.html">Paging</a>
+          
+          <div class="dropdown">
+            <button class="dropbtn">FIFO
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="fifo.html">Explanation</a>
+              <a href="Simulation for fifo.html">Simulation</a>
+            </div>
+            
+          </div>
+          <div class="dropdown">
+            <button  class="dropbtn">LIFO
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="lifo.html">Explanation</a>
+              <a href="Simulation for lifo.html">Simulation</a>
+            </div>
+            
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">LRU
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="LRU.html">Explanation</a>
+              <a href="Simulation for lru.html">Simulation</a>
+            </div>
+            
+          </div>
+          <div class="dropdown">
+            <button  class="dropbtn">OPR
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="opr.html">Explanation</a>
+              <a href="Simulation for opr.html">Simulation</a>
+            </div>
+            
+          </div>
+          <a href="aboutus.html">About Us</a>          
+        </div>
+    
+    
+      </nav>
+    
+    <!-- <header><h1>Simulation for First In First Out(FIFO)</h1></header> -->
+
+
+    <main>
+        <div class="Header" style="margin-top: 50px; margin-bottom: -5%;">
+            <h3>FIFO Simulator</h3>
+        </div>
+       
+        <!-- <div class="mycontainer" style="border: 1px solid black;"> -->
+              <label for="Reference Strings" class="lbl_ref_string" style="margin-bottom: 20px;">Please Enter a Reference String in {1,2,3,4....} format:</label><br>
+              <br><br><br>
+              <label for="Reference Strings" class="lbl_ref_string">Enter a Reference String:</label><br>
+              <input type="text" class="referenceStringInput" name="Reference String" id ="abcd" style="border: 1px solid black;"><br>
+                      
+              <label for="No of Frames" class="lbl_frames">No of Frames:</label>
+              <input list="text" class="FrameInput" name="total_frames" id="no_of_frames" style="border: 1px solid black;">
+               <br>
+        </div> 
+
+        <div class="btns"style="position: absolute; margin-left: 45%;">
+          <a href="Simulation for lru.html" 
+             style="
+                    padding: 7px;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    border: 1px solid white;
+                   ">
+                   Reset
+            </a>  
+          <!-- <input type="button" id="create" value="Submit" > -->
+          <a href="#" onclick="Javascript:addTable()" 
+            style="padding: 7px;
+            border-radius: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 1px solid white;">
+                  Submit
+          </a>
+
+          <div id="myDynamicTable" style="position: absolute; margin-left:-400px; width: 800px; margin-top: 70px;">
+            <!-- <a href="Simulation for opr.html"> <input type="button" id="reset" value="Reset"></a>       
+            <input type="button" id="create" value="Submit" onclick="Javascript:addTable()"> -->
+          </div> 
+            
+        <!-- </div> -->
+      
+    
+              
+     
+    </main>
+  
+    
+
+    <div class="bot_logo" style="position: fixed;bottom: 0;right: 0;">
+      <a href="https://app.engati.com/static/standalone/bot.html?bot_key=d08183e672844e27&launch_flow=welcome_72153&env=p"><img src="bot.png" alt=""></a>
+    </div>
+</body>
+<script src="simufifo.js"></script>
+<div style=
+          "padding-left: 10%;
+          padding-right: 10%;
+          margin-top: 20%;">
+  <canvas id="myChart" width="400" height="100" ></canvas>
+</html>

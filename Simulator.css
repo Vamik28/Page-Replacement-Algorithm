@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h_Header h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center; 
+    color: #fff;
+}
+.mycontainer{
+    width: 20%;
+    margin-top: 5%;
+    margin-left: 37%;
+    margin-right: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    border: 3px solid white; 
+    background: black;
+    box-shadow: 2px 2px 5px black;
+}
+.lbl_ref_string{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.referenceStringInput{
+    margin-top: 10px;
+    padding: 11px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+.lbl_frames{
+    margin-right: 20px;
+    font-family: 'Ubuntu', sans-serif;;
+    font-weight: bold;
+    color: #fff;
+}
+.FrameInput{
+    margin-top: 10px;
+    padding: 11px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    width: 65px;
+    border: 1px solid black;
+}
+.data{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+@media(max-width: 424px) {
+    .h_Header h1{
+        font-size: 2rem;
+    }
+    .mycontainer{
+        width: 70%;
+        margin-left: 62px;
+        position: absolute;
+        border-color: #fff;
+    }
+    .data{
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media(min-width: 425px){
+    .h_Header h1{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    .lbl_ref_string{
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .mycontainer{
+        width: 70%; 
+        margin-left: 62px;
+        position: absolute;
+        border-color: #fff;
+    }
+    .data{
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .referenceStringInput{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+@media(min-width: 768px){
+    .mycontainer{
+        width: 50%;
+        margin-left: 26%;
+    }
+}
+#create{
+    margin-bottom: 10%;
+    background-color: black;
+    margin-right: 50% ;
+    font-weight: bold;
+    color: #fff;
+    border-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+#reset{
+    font-size: large;
+    margin-bottom: 10%;
+    background-color: black;
+    margin-right: 10%;
+    margin-left: 2%;
+    align-self: start;
+    font-weight: bold;
+    color: #fff;
+    border-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#myDynamicTable{
+  background-color: black;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-color: #fff;
+  border-width: 2px;
+  padding-left: 15%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 18%;
+  margin-top: 10%;
+}
+body{
+    background-color: black;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--====== Title ======-->
+    <title>FIFO Simulator</title>
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="logo.jpg"
+      type="image/jpg"
+    />
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="lineicons.css" />
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="starter.css" />
+
+    <link rel="stylesheet" href="navbar-06.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="Simulator.css">
+
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+    <!--====== NAVBAR SIX PART START ======-->
+
+    <section class="navbar-area navbar-six">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-fixed navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="javascript:void(0)">
+                <img src="PDPU-Logo.png" alt="Logo" width="200px"/>
+              </a>
+
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSix"
+                aria-controls="navbarSix"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSix">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a
+                      class="page-scroll active"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#sub-nav11"
+                      aria-controls="sub-nav11"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                      href="javascript:void(0)"
+                      >Home
+                      <!--<div class="sub-nav-toggler">
+                        <span><i class="lni lni-chevron-down"></i></span>
+                      </div>-->
+                    </a>
+                    <!--<ul class="sub-menu collapse" id="sub-nav11">
+                      <li>
+                        <a href="javascript:void(0)">Corporate Homepage</a>
+                      </li>
+                      <li>
+                        <a
+                          class="page-scroll"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#sub-nav12"
+                          aria-controls="sub-nav12"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                          href="javascript:void(0)"
+                          >Business Homepage
+                          <div class="sub-nav-toggler">
+                            <span><i class="lni lni-chevron-down"></i></span>
+                          </div>
+                        </a>
+                        <ul class="sub-menu collapse" id="sub-nav12">
+                          <li><a href="javascript:void(0)">Creative</a></li>
+                          <li><a href="javascript:void(0)">Multipurpose</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="javascript:void(0)">Agency Homepage</a></li>
+                    </ul>-->
+                  </li>
+                  <li class="nav-item">
+                    <a href="Algorithms.html">Algorithms</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:void(0)">Team</a>
+                  </li>
+                  <!--<li class="nav-item">
+                    <a href="javascript:void(0)">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:void(0)">Contact</a>
+                  </li>-->
+                </ul>
+              </div>
+
+              <!--<div class="navbar-btn rounded-buttons d-none d-sm-inline-block">
+                <a class="btn primary-btn" href="javascript:void(0)">
+                  DOWNLOAD NOW
+                </a>
+              </div>-->
+            </nav>
+            <!-- navbar -->
+          </div>
+        </div>
+        <!-- row -->
+        
+      </div>
+      <!-- container -->
+    </section>
+  
+               
+    <!--====== NAVBAR SIX PART ENDS ======-->
+    <div class="Header">
+        <h1>FIFO Simulator</h1>
+    </div>
+    <div class="mycontainer" style="border: 1px solid black;">
+        <form action="Result.html">
+          <label for="Reference Strings" class="lbl_ref_string">Enter a Reference String:</label><br>
+          <input type="text" class="referenceStringInput" name="Reference String" style="border: 1px solid black;"><br>
+          
+          <label for="No of Frames" class="lbl_frames">No of Frames: </label>
+          <input list="Frames" class="FrameInput" name="total_frames" id="" style="border: 1px solid black;">
+            <datalist id="Frames">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+            </datalist><br>
+            <input type="submit" class="data" value="submit" style="border: 1px solid black;">
+        </form>
+      </div>
+     
+      
+    <!--====== Bootstrap js ======-->
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script>
+      //===== close navbar-collapse when a  clicked
+      let navbarTogglerSix = document.querySelector(
+        ".navbar-six .navbar-toggler"
+      );
+      navbarTogglerSix.addEventListener("click", function () {
+        navbarTogglerSix.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

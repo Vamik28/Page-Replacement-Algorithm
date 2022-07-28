@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fifo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <nav>
+      
+      
+      <div class="nav">
+        <a href="home.html"><i class="fa fa-home"></i></a>
+        <a href="what_is_page_replacement.html">Paging</a>
+        <div class="dropdown">
+          <button class="dropbtn">FIFO
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fifo.html">Explanation</a>
+            <a href="Simulation for fifo.html">Simulation</a>
+          </div>
+          
+        </div>
+        <div class="dropdown">
+          <button  class="dropbtn">LIFO
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="lifo.html">Explanation</a>
+            <a href="Simulation for lifo.html">Simulation</a>
+          </div>
+          
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">LRU
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="LRU.html">Explanation</a>
+            <a href="Simulation for lru.html">Simulation</a>
+          </div>
+          
+        </div>
+        <div class="dropdown">
+          <button  class="dropbtn">OPR
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="opr.html">Explanation</a>
+            <a href="Simulation for opr.html">Simulation</a>
+          </div>
+          
+        </div>
+        <a href="aboutus.html">About Us</a>          
+      </div>
+  
+  
+    </nav>
+    <header><h1>What are Page Replacement Algorithms? </h1></header>    
+    <main>
+     <ul>
+       <li>A computer system has a limited amount of memory. Adding more memory physically is very costly. Therefore most modern computers use a combination of both hardware and software to allow the computer to address more memory than the amount physically present on the system. This extra memory is also known as <b>Virtual Memory</b> and is a section of hard disk.</li>
+       <li>Virtual Memory is a storage allocation scheme used by the Memory Management Unit(MMU) to compensate for the shortage of physical memory by transferring data from RAM to disk storage. It addresses secondary memory as though it is a part of the main memory. Virtual Memory makes the memory appear larger than actually present which helps in the execution of programs that are larger than the physical memory.</li>
+       <li>Virtual Memory can be implemented using two methods :</li>
+     </ul>
+     
+           <ul>
+            <li>Paging</li>
+            <li>Segmentation</li>
+        </ul> 
+           
+            
+           <h1> Paging</h1>
+           <ul>
+             <li>  <b>Paging</b> is a process of reading data from, and writing data to, the secondary storage. It is a memory management scheme that is used to retrieve processes from the secondary memory in the form of pages and store them in the primary memory. The main objective of paging is to divide each process in the form of pages of fixed size*. These pages are stored in the main memory in the form of <b>frames</b>. Pages of a process are only brought from the secondary memory to the main memory when they are needed.<br>* Note: The size of the pages is equal to the frame size.</li>
+             <li>When an executing process refers to a page, it is first searched in the main memory. If it is not present in the main memory, a page fault occurs.</li>
+             <li> <b>Page Fault</b> is the condition in which a running process referenced to a page by the CPU is not loaded in the main memory.</li>
+             <li>In such a case, the OS has to bring the page from the secondary storage into the main memory. This may cause some pages in the main memory to be replaced due to limited storage. A Page Replacement Algorithm is required to decide which page needs to be replaced.</li>
+          
+             <h2>Some Important Terminolgies :</h2>
+             <ul>
+               <li>References or reference string: It is a string which contains a list of pages from processes that are required to be loaded in the main memory by the CPU.</li>
+               <li><b>Page Hit/Hit</b>: When the running process refers to a page that is already present in one of the frames of the main memory is referred to as a Page Hit/Hit.</li>
+               <li><b>Page Miss/Miss</b>: When the running process refers to a page that is not present in any of the frames of the main memory is referred to as a Page Miss/Miss. Or in other terms, whenever a Page Fault occurs it implies a Page Miss and vice- versa.</li>
+               <li><b>Hit Ratio</b>: Mathematically, it is (Total number of page hits)/(Total number of references). It is a measure of how efficient our algorithm is. </li>
+               <li><b>Miss Ratio</b>: Mathematically, it is (Total number of page Miss or Page faults)/(Total number of references)</li>
+               <li><b>Page Table</b>:Page table is the data structure used by the virtual memory system to store the mapping between logical addresses and physical addresses. </li>
+               <br>
+               <br>
+              </ul>
+              <a href="index.html"><button>Algorithms</button></a>
+  </main>  
+  <div class="bot_logo" style="position: fixed;bottom: 0;right: 0;">
+    <a href="https://app.engati.com/static/standalone/bot.html?bot_key=d08183e672844e27&launch_flow=welcome_72153&env=p"><img src="bot.png" alt=""></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fifo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+      
+      
+    <div class="nav">
+      <a href="home.html"><i class="fa fa-home"></i></a>
+      <a href="what_is_page_replacement.html">Paging</a>
+      <div class="dropdown">
+        <button class="dropbtn">FIFO
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="fifo.html">Explanation</a>
+          <a href="Simulation for fifo.html">Simulation</a>
+        </div>
+        
+      </div>
+      <div class="dropdown">
+        <button  class="dropbtn">LIFO
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="lifo.html">Explanation</a>
+          <a href="Simulation for lifo.html">Simulation</a>
+        </div>
+        
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">LRU
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="LRU.html">Explanation</a>
+          <a href="Simulation for lru.html">Simulation</a>
+        </div>
+        
+      </div>
+      <div class="dropdown">
+        <button  class="dropbtn">OPR
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="opr.html">Explanation</a>
+          <a href="Simulation for opr.html">Simulation</a>
+        </div>
+        
+      </div>
+      <a href="aboutus.html">About Us</a>          
+    </div>
+
+
+  </nav>
+    
+    <header><h1>Optimal Page Replacement(OPR)</h1></header>
+    <main>
+      <ul>
+      <li>The page replacement algorithms are used in operating systems that use virtual memory management.</li>
+      <li>When a page of memory needs to be allocated to the CPU, these page replacement algorithms decide which pages should be written to the disk and which algorithms should be swapped out of memory.</li>
+      <li>This algorithm is also known as Clairvoyent Replacement Algorithm. As per the optimal page replacement technique, the page with the highest label should be removed first.</li>
+      <li>When a page needs to be swapped into the memory, the OS will swap out the page which is not required to be used in the near future.</li>
+      <li>This page replacement algorithm is a little unreliable to implement and, therefore, it cannot be implemented in a general-purpose operating system.</li>
+      </ul>
+      <h2>Advantages</h2>
+      <ul><li>Complexity is less and easy to implement.</li>
+    <li>Assistance needed is low i.e Data Structure used are easy and light.</li></ul>
+        <h2>Disadvantages</h2>
+        <ul><li>OPR is perfect, but not possible in practice as the operating system cannot know future requests.</li>
+            <li>Error handling is tough.</li>
+            </ul>
+            <h2>Examples</h2>
+          <li>Consider the page references 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2,4 page frame. Find number of page fault.</li>
+            <h2>Solution</h2>
+        <img src = "optimal.png" alt="">  
+    </main>
+    
+    <a href="Simulation for opr.html"><button>Simulation</button></a>
+
+    <div class="bot_logo" style="position: fixed;bottom: 0;right: 0;">
+      <a href="https://app.engati.com/static/standalone/bot.html?bot_key=d08183e672844e27&launch_flow=welcome_72153&env=p"><img src="bot.png" alt=""></a>
+    </div>
+</body>
+</html>
